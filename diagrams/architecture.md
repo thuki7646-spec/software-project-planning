@@ -1,3 +1,4 @@
+mermaid
 graph LR
     Users --> Frontend
     Frontend --> API
