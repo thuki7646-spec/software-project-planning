@@ -1,8 +1,6 @@
-mermaid
-graph LR
-    Users --> Frontend
-    Frontend --> API
-    API --> Database
-    Database --> API
-    API --> Frontend
-    Frontend --> Users
+mermaid 
+graph LR 
+Frontend --> API
+API --> Database 
+Database --> API 
+API --> Frontend
