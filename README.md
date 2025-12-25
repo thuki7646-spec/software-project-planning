@@ -1,5 +1,21 @@
-graph LR
-    Frontend -->|API Request| Backend
-    Backend -->|Response| Frontend
-    Backend --> Database
-    Database --> Backend
+flowchart LR
+    U[👤 Users]
+
+    subgraph FE [🖥️ Frontend]
+        UI[User Interface]
+    end
+
+    subgraph BE [⚙️ Backend / API]
+        API[REST API]
+    end
+
+    subgraph DB [🗄️ Database]
+        DATA[(Data)]
+    end
+
+    U --> UI
+    UI --> API
+    API --> DATA
+    DATA --> API
+    API --> UI
+    UI --> U
